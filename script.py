@@ -3,10 +3,7 @@ import smtplib
 import maskpass
 from email.message import EmailMessage
 
-sender = 'ninjacarrot9@gmail.com'
-
-print(f'From: {sender}')
-
+sender = input('Your email: ')
 password = maskpass.askpass(prompt="Enter your Password: ", mask="*") 
 receiver = input('Send to: ')
 subject = input('Subject: ')
